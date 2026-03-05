@@ -268,6 +268,7 @@ const getIconByDay = (day) => {
   min-height: 297mm;
   padding: 15mm;
   box-sizing: border-box;
+
   font-family: "Comic Sans MS", cursive, sans-serif;
 
   border-radius: 25px;
@@ -303,14 +304,19 @@ const getIconByDay = (day) => {
   border-bottom: 4px solid #4caf50;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .logo-izquierda {
-  width: 150px;
+  width: 120px;
+  max-width: 120px;
+  height: auto;
 }
 
 .logo-derecha {
-  width: 100px;
+  width: 90px;
+  max-width: 90px;
+  height: auto;
 }
 
 .title-section {
@@ -356,12 +362,12 @@ const getIconByDay = (day) => {
 
 
 .menu-table {
- width: 100%;
+  width: 100%;
   border-collapse: collapse;
   font-size: 13px;
   background: white;
   border-radius: 15px;
-  border-collapse: collapse;
+  overflow: hidden;
 }
 
 .menu-table td {
@@ -504,8 +510,7 @@ const getIconByDay = (day) => {
 
 }
 .menu-table {
-  display: block;
-  overflow-x: auto;
+    overflow-x: auto;
 }
 
 /* ========================================= */
@@ -550,13 +555,12 @@ const getIconByDay = (day) => {
 /* 📱 VERSIÓN MÓVIL                          */
 /* ========================================= */
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .report {
     width: 100%;
-    min-height: auto;
+    height: auto;
     padding: 10px;
-    border-radius: 0;
   }
 
   .header {
@@ -564,10 +568,12 @@ const getIconByDay = (day) => {
     text-align: center;
   }
 
-  .logo-izquierda,
+  .logo-izquierda {
+    width: 90px;
+  }
+
   .logo-derecha {
-    width: 80px;
-    margin: 5px 0;
+    width: 70px;
   }
 
   .menu-table {
@@ -579,16 +585,7 @@ const getIconByDay = (day) => {
     padding: 5px;
   }
 
-  .footer {
-    font-size: 14px;
-  }
-
 }
-@page {
-  size: A4;
-  margin: 10mm;
-}
-
 
 </style>
 
