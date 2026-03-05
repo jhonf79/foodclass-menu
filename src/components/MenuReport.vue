@@ -15,7 +15,7 @@ import estrella from "../assets/decor/estrella.png";
 // Iconos por día
 import iconLunes from "../assets/decor/lunes.png";
 import iconMartes from "../assets/decor/martes.png";
-import iconMiercoles from "../assets/decor/martes.png";
+import iconMiercoles from "../assets/decor/miercoles.png";
 import iconJueves from "../assets/decor/jueves.png";
 import iconViernes from "../assets/decor/viernes.png";
 
@@ -62,7 +62,7 @@ const downloadPDF = async () => {
 
     // Convertimos el HTML a imagen
     const canvas = await html2canvas(element, {
-      scale: 3, // 🔽 reduce peso del archivo
+      scale: 2, // 🔽 reduce peso del archivo
       useCORS: true
     });
 
