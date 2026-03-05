@@ -16,7 +16,7 @@ import estrella from "../assets/decor/estrella.png";
 import iconLunes from "../assets/decor/lunes.png";
 import iconMartes from "../assets/decor/martes.png";
 import iconMiercoles from "../assets/decor/mirc.png";
-import iconJueves from "../assets/decor/jueves.png";
+import iconJueves from "../assets/decor/Jueves.png";
 import iconViernes from "../assets/decor/viernes.png";
 
 // Librerías para generar PDF
