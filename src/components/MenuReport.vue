@@ -15,7 +15,7 @@ import estrella from "../assets/decor/estrella.png";
 // Iconos por día
 import iconLunes from "../assets/decor/lunes.png";
 import iconMartes from "../assets/decor/martes.png";
-import iconMiercoles from "../assets/decor/miercoles.png";
+import iconMiercoles from "../assets/decor/mirc.png";
 import iconJueves from "../assets/decor/jueves.png";
 import iconViernes from "../assets/decor/viernes.png";
 
@@ -113,9 +113,9 @@ const getRowClassByDay = (day) => {
     case "martes":
       return "row-martes";
 
-    case "miércoles":
-    case "miercoles":
-      return "row-miercoles";
+    case "mirc":
+    case "mirc":
+      return "row-mirc";
 
     case "jueves":
       return "row-jueves";
@@ -141,8 +141,8 @@ const getIconByDay = (day) => {
     case "martes":
       return iconMartes;
 
-    case "miércoles":
-    case "miercoles":
+    case "mirc":
+    case "mirc":
       return iconMiercoles;
 
     case "jueves":
