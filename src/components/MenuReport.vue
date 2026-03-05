@@ -15,7 +15,7 @@ import estrella from "../assets/decor/estrella.png";
 // Iconos por día
 import iconLunes from "../assets/decor/lunes.png";
 import iconMartes from "../assets/decor/martes.png";
-import iconMartes from "../assets/decor/martes.png";
+import iconMiercoles from "../assets/decor/miercoles.png"; 
 import iconJueves from "../assets/decor/jueves.png";
 import iconViernes from "../assets/decor/viernes.png";
 
