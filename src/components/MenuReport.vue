@@ -559,25 +559,31 @@ const getIconByDay = (day) => {
 
   .report {
     width: 100%;
-    height: 100%;
-    padding: 10px;
+    min-height: 100vh;   /* ocupa toda la pantalla */
+    height: auto;        /* permite crecer si el contenido es más grande */
+    padding: 12px;
+    box-sizing: border-box;
   }
 
   .header {
     flex-direction: column;
     text-align: center;
+    gap: 6px;
   }
 
   .logo-izquierda {
     width: 90px;
+    height: auto;
   }
 
   .logo-derecha {
     width: 70px;
+    height: auto;
   }
 
   .menu-table {
     font-size: 11px;
+    width: 100%;
   }
 
   .menu-table th,
