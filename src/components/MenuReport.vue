@@ -559,7 +559,7 @@ const getIconByDay = (day) => {
 
   .report {
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 10px;
   }
 
