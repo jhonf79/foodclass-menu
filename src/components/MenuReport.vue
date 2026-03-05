@@ -265,7 +265,7 @@ const getIconByDay = (day) => {
 
 .report {
   width: 210mm;
-  height: 297mm;
+  min-height: 297mm;
   padding: 15mm;
   box-sizing: border-box;
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -274,9 +274,7 @@ const getIconByDay = (day) => {
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 
   position: relative;
-  overflow: hidden;
 
-  /* 🌈 Fondo caricaturesco correcto */
   background: linear-gradient(
     180deg,
     #fffde7 0%,
@@ -363,7 +361,7 @@ const getIconByDay = (day) => {
   font-size: 13px;
   background: white;
   border-radius: 15px;
-  overflow: hidden;
+  border-collapse: collapse;
 }
 
 .menu-table td {
@@ -516,20 +514,38 @@ const getIconByDay = (day) => {
 
 @media print {
 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   .report {
     width: 210mm;
-    height: 297mm;
-    padding: 15mm;
+    min-height: 297mm;
+    padding: 10mm;
     border-radius: 0;
     box-shadow: none;
   }
 
-  body {
-    margin: 0;
+  .menu-table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .menu-table th,
+  .menu-table td {
+    padding: 6px;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  .download-section {
+    display: none;
   }
 
 }
-
 /* ========================================= */
 /* 📱 VERSIÓN MÓVIL                          */
 /* ========================================= */
@@ -538,8 +554,8 @@ const getIconByDay = (day) => {
 
   .report {
     width: 100%;
-    height: auto;
-    padding: 15px;
+    min-height: auto;
+    padding: 10px;
     border-radius: 0;
   }
 
@@ -554,23 +570,13 @@ const getIconByDay = (day) => {
     margin: 5px 0;
   }
 
-  .title-section h2 {
-    font-size: 16px;
-  }
-
-  .title-section h3 {
-    font-size: 14px;
-  }
-
   .menu-table {
-    display: block;
-    overflow-x: auto;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .menu-table th,
   .menu-table td {
-    padding: 6px;
+    padding: 5px;
   }
 
   .footer {
@@ -578,5 +584,11 @@ const getIconByDay = (day) => {
   }
 
 }
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+
 </style>
 
