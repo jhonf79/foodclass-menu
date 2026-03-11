@@ -390,6 +390,22 @@ const getIconByDay = (day) => {
   overflow: hidden;
 }
 
+.menu-list {
+  margin: 0;
+  padding-left: 18px;
+  text-align: left;
+}
+
+.menu-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-list li::before {
+  content: "🍎 ";
+  margin-right: 5px;
+}
+
 .menu-table td {
   padding: 8px;
   border: 2px dashed #ffcc80;
