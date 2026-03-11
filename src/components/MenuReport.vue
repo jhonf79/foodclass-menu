@@ -249,8 +249,18 @@ const getIconByDay = (day) => {
 
     <div class="footer">
        <img :src="jugo" class="footer-icon" />
-  <p>¡BUEN PROVECHO!</p>
-  <p>Contacto: 3152498876</p>
+  <p>¡Comamos rico y saludable para crecer fuertes!</p>
+
+  <div class="contacto">
+  <!--  Creamos un enlace <a>  -->
+  <a href="https://wa.me/573152498876?text=Hola%20quiero%20información%20del%20menú%20escolar"
+target="_blank">
+    <!--Texto que verá el usuario-->
+    📲 WhatsApp: 315 249 8876
+
+  </a>
+
+</div>
     </div>
 
   </div>
@@ -324,7 +334,7 @@ const getIconByDay = (day) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 4px solid #4caf50;
+  border-bottom: 6px solid #fb0101;
   padding-bottom: 10px;
   margin-bottom: 20px;
   gap: 10px;
@@ -458,9 +468,25 @@ const getIconByDay = (day) => {
   color: #1b1a1a;
   font-size: 18px;
 }
+frase-menu {
+  font-size: 18px;
+  font-weight: bold;
+  color: #19981f;
+  text-align: center;
+} 
 .footer-icon {
   width: 50px;
   margin-bottom: 5px;
+}
+
+.contacto a {
+  color: #048f37; /* color oficial de WhatsApp */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
 }
 .download-section {
   text-align: center;
