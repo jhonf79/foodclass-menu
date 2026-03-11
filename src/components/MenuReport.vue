@@ -96,6 +96,18 @@ const downloadPDF = async () => {
       .replace(/-+/g, "-")
       .toUpperCase();
 
+         // ===============================
+        // LINK DE WHATSAPP EN EL PDF
+       // ===============================
+
+       pdf.link(
+      70,   // posición X del enlace
+      270,  // posición Y del enlace (zona del contacto)
+      80,   // ancho del área clickeable
+      10,   // alto del área clickeable
+      { url: "https://wa.me/573152498876" }
+    );
+
     pdf.save(`MENU-${cleanWeek}.pdf`);
 
   } catch (error) {
