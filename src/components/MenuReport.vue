@@ -505,46 +505,6 @@ const getIconByDay = (day) => {
   top: 680px;
   right: 90px;
 }
-
-
-/* ========================================= */
-/* 🖨 VERSIÓN IMPRESIÓN A4                   */
-/* ========================================= */
-
-@media print {
-
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  .report {
-    width: 210mm;
-    min-height: 297mm;
-    padding: 10mm;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .menu-table {
-    width: 100%;
-    font-size: 12px;
-  }
-
-  .menu-table th,
-  .menu-table td {
-    padding: 6px;
-  }
-
-  tr {
-    page-break-inside: avoid;
-  }
-
-  .download-section {
-    display: none;
-  }
-
-}
 /* ========================================= */
 /* 📱 VERSIÓN MÓVIL       ultimo                   */
 /* ========================================= */
@@ -607,6 +567,46 @@ const getIconByDay = (day) => {
   }
 
 }
+
+/* ========================================= */
+/* 🖨 VERSIÓN IMPRESIÓN A4                   */
+/* ========================================= */
+
+@media print {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .report {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 10mm;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .menu-table {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .menu-table th,
+  .menu-table td {
+    padding: 6px;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  .download-section {
+    display: none;
+  }
+
+}
+
 
 </style>
 
