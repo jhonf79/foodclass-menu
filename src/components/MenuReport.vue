@@ -213,9 +213,29 @@ const getIconByDay = (day) => {
   <!-- Icono dinámico según día -->
   <img    :src="getIconByDay(item.day)"    class="icon-day"  />  {{ item.day }}
        </td>
-          <td>{{ item.morningSnack }}</td>
-          <td>{{ item.lunch }}</td>
-          <td>{{ item.afternoonSnack }}</td>
+         <td>
+  <ul class="menu-list">
+    <li v-for="(food, i) in item.morningSnack.split(',')" :key="i">
+      {{ food.trim() }}
+    </li>
+  </ul>
+</td>
+
+<td>
+  <ul class="menu-list">
+    <li v-for="(food, i) in item.lunch.split(',')" :key="i">
+      {{ food.trim() }}
+    </li>
+  </ul>
+</td>
+
+<td>
+  <ul class="menu-list">
+    <li v-for="(food, i) in item.afternoonSnack.split(',')" :key="i">
+      {{ food.trim() }}
+    </li>
+  </ul>
+</td>
         </tr>
       </tbody>
     </table>
