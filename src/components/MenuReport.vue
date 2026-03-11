@@ -506,48 +506,6 @@ const getIconByDay = (day) => {
   right: 90px;
 }
 
-/* ========================================= */
-/* RESPONSIVE PARA CELULAR 📱                */
-/* ========================================= */
-
-@media (max-width: 768px) {
-
-  .report {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    border-radius: 0;
-  }
-
-  .menu-table {
-    font-size: 11px;
-  }
-
-  .menu-table th,
-  .menu-table td {
-    padding: 6px;
-  }
-
-  .logo-izquierda {
-    width: 90px;
-  }
-
-  .logo-derecha {
-    width: 70px;
-  }
-
-  .title-section h2 {
-    font-size: 14px;
-  }
-
-  .title-section h3 {
-    font-size: 13px;
-  }
-
-}
-.menu-table {
-    overflow-x: auto;
-}
 
 /* ========================================= */
 /* 🖨 VERSIÓN IMPRESIÓN A4                   */
