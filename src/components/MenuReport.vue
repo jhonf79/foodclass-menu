@@ -265,8 +265,7 @@ const getIconByDay = (day) => {
 
   <div class="contacto">
   <!--  Creamos un enlace <a>  -->
-  <a href="https://wa.me/573152498876?text=Hola%20quiero%20información%20del%20menú%20escolar"
-target="_blank">
+  <a href="https://wa.me/573152498876?text=Hola%20quiero%20información%20del%20menú%20escolar" target="_blank">
     <!--Texto que verá el usuario-->
     📲 WhatsApp: 315 249 8876
 
@@ -294,16 +293,16 @@ target="_blank">
 /* ========================================= */
 
 .row-lunes {
-  background-color: #fff9c4; /* amarillo pastel */}
+  background-color: #feffcc; /* amarillo pastel */}
 
 .row-martes {
   background-color: #ffe0f0; /* rosado suave */}
 
 .row-miercoles {
-  background-color: #d1f2ff; /* azul cielo */}
+  background-color: #a2e0f9; /* azul cielo */}
 
 .row-jueves {
-  background-color: #d4f8e8; /* verde menta */}
+  background-color: #c2f9e0; /* verde menta */}
 
 .row-viernes {
   background-color: #e9d5ff; /* lila pastel */}
@@ -329,7 +328,7 @@ target="_blank">
   );
 }
 .report::after {
-  content: "🌟 🌈 ⭐ 🎉 ⭐ 🌈 🌟 "; 
+  content: "🌟 🌈  🎉  🌈 🌟 "; 
   position: absolute;
   bottom: 15px;
   left: 50%;
@@ -346,20 +345,20 @@ target="_blank">
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 6px solid #fb0101;
+  border-bottom: 6px solid #f63737;
   padding-bottom: 10px;
   margin-bottom: 20px;
   gap: 10px;
 }
 
 .logo-izquierda {
-  width: 120px;
-  max-width: 120px;
+  width: 100px;
+  max-width: 100px;
   height: auto;
 }
 
 .logo-derecha {
-  width: 90px;
+  width: 60px;
   max-width: 90px;
   height: auto;
 }
@@ -391,7 +390,7 @@ target="_blank">
 
 .title-section h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   color: #ff6f00;
   text-shadow: 2px 2px 0px #fff;
 }
@@ -437,10 +436,10 @@ target="_blank">
 .menu-table th {
   background: linear-gradient(
     90deg,
-    #07ceed,
-    #0ca1d7
+    #67cff5,
+    #0ebcfb
   );
-  color: white;
+  color: rgb(249, 249, 249);
   padding: 8px;
   border: 2px solid #ffffff;
   font-size: 14px;
@@ -492,7 +491,7 @@ frase-menu {
 }
 
 .contacto a {
-  color: #048f37; /* color oficial de WhatsApp */
+  color: #0521d9; /* color oficial de WhatsApp */
   font-weight: bold;
   text-decoration: none;
 }
@@ -524,8 +523,8 @@ frase-menu {
 
 .cloud {
   position: absolute;
-  width: 120px;
-  height: 60px;
+  width: 100px;
+  height: 50px;
   background: white;
   border-radius: 50px;
   box-shadow:
@@ -579,7 +578,7 @@ frase-menu {
   }
 
   .decor-star {
-    width: 30px;
+    width: 50px;
   }
 
   .title-section h2 {
