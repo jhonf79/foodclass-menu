@@ -292,7 +292,7 @@ const getIconByDay = (day) => {
   padding: 15mm;
   box-sizing: border-box;
 
-  font-family: "Comic Sans MS", cursive, sans-serif;
+ font-family: "Comic Sans MS", Arial, sans-serif;
 
   border-radius: 25px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
@@ -360,7 +360,7 @@ const getIconByDay = (day) => {
 
 .title-section p {
   margin: 0;
-  font-weight: bold;
+  font-weight: sans-serif;
 }
 .decor-star {
   width: 40px;
@@ -382,8 +382,6 @@ const getIconByDay = (day) => {
 /* ========================================= */
 /* TABLA                                     */
 /* ========================================= */
-
-
 .menu-table {
   width: 100%;
   border-collapse: collapse;
@@ -417,8 +415,8 @@ const getIconByDay = (day) => {
 .menu-table th {
   background: linear-gradient(
     90deg,
-    #ffcc80,
-    #ff8a65
+    #07ceed,
+    #0ca1d7
   );
   color: white;
   padding: 8px;
@@ -457,7 +455,7 @@ const getIconByDay = (day) => {
  margin-top: 25px;
   text-align: center;
   font-weight: bold;
-  color: #db6b15;
+  color: #1b1a1a;
   font-size: 18px;
 }
 .footer-icon {
