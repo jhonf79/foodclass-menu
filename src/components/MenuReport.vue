@@ -53,40 +53,43 @@ const reportRef = ref(null);
 // ===========================================
 // FUNCIÓN PARA DESCARGAR PDF
 // ===========================================
-
 const downloadPDF = async () => {
   try {
 
     const element = reportRef.value;
     if (!element) return;
 
-    // Convertimos el HTML a imagen
+    // ✅ Activar modo A4 antes de capturar
+    document.body.classList.add("print-mode");
+
     const canvas = await html2canvas(element, {
-      scale: 2, // 🔽 reduce peso del archivo
+      scale: 3,
       useCORS: true
     });
 
-    // Convertimos a formato JPG comprimido
-    const imgData = canvas.toDataURL("image/jpeg", 1); 
-    // 🔽 1.7 = más liviano (ideal WhatsApp)
+    // ❗ Desactivar modo A4 después de capturar
+    document.body.classList.remove("print-mode");
+
+    const imgData = canvas.toDataURL("image/jpeg", 0.9);
 
     const pdf = new jsPDF("p", "mm", "a4");
 
-    const imgWidth = 210;
-    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+    const pageWidth = 210;
+    const pageHeight = 297;
+
+    const imgWidth = pageWidth;
+    let imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+    if (imgHeight > pageHeight) {
+      imgHeight = pageHeight;
+    }
 
     pdf.addImage(imgData, "JPEG", 0, 0, imgWidth, imgHeight);
 
-    // ===========================================
-    // GENERAR NOMBRE DINÁMICO CORRECTO
-    // ===========================================
-
-    // Si weekText viene vacío usamos texto por defecto
     const weekLabel = weekText && weekText.trim() !== ""
       ? weekText
       : "SEMANA-SIN-FECHA";
 
-    // Limpiamos texto para nombre de archivo
     const cleanWeek = weekLabel
       .replace(/:/g, "")
       .replace(/\s+/g, "-")
@@ -606,7 +609,10 @@ const getIconByDay = (day) => {
   }
 
 }
-
+.print-mode .report {
+  width: 210mm !important;
+  min-height: 297mm !important;
+}
 
 </style>
 
