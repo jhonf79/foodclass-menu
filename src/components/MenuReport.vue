@@ -588,43 +588,64 @@ const getIconByDay = (day) => {
 
 }
 /* ========================================= */
-/* 📱 VERSIÓN MÓVIL                          */
+/* 📱 VERSIÓN MÓVIL       ultimo                   */
 /* ========================================= */
 
 @media (max-width: 768px) {
 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   .report {
-    width: 100%;
-    min-height: 100vh;   /* ocupa toda la pantalla */
-    height: auto;        /* permite crecer si el contenido es más grande */
-    padding: 12px;
-    box-sizing: border-box;
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 15px;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .header {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 6px;
   }
 
   .logo-izquierda {
-    width: 90px;
-    height: auto;
+    width: 80px;
   }
 
   .logo-derecha {
-    width: 70px;
-    height: auto;
+    width: 60px;
+  }
+
+  .decor-star {
+    width: 30px;
+  }
+
+  .title-section h2 {
+    font-size: 16px;
+  }
+
+  .title-section h3 {
+    font-size: 14px;
   }
 
   .menu-table {
-    font-size: 11px;
     width: 100%;
+    font-size: 11px;
   }
 
   .menu-table th,
   .menu-table td {
-    padding: 5px;
+    padding: 6px;
+  }
+
+  /* ocultar nubes que rompen el layout */
+  .cloud {
+    display: none;
   }
 
 }
