@@ -352,13 +352,13 @@ const getIconByDay = (day) => {
 }
 
 .logo-izquierda {
-  width: 100px;
-  max-width: 100px;
+  width: 120px;
+  max-width: 120px;
   height: auto;
 }
 
 .logo-derecha {
-  width: 60px;
+  width: 50px;
   max-width: 90px;
   height: auto;
 }
@@ -486,12 +486,12 @@ frase-menu {
   text-align: center;
 } 
 .footer-icon {
-  width: 50px;
+  width: 80px;
   margin-bottom: 5px;
 }
 
 .contacto a {
-  color: #0521d9; /* color oficial de WhatsApp */
+  color: #049b2c; /* color oficial de WhatsApp */
   font-weight: bold;
   text-decoration: none;
 }
@@ -535,12 +535,12 @@ frase-menu {
 }
 
 .cloud-left {
-  top: 710px;
-  left: 80px;
+  top: 790px;
+  left: 90px;
 }
 
 .cloud-right {
-  top: 680px;
+  top: 650px;
   right: 90px;
 }
 /* ========================================= */
@@ -570,7 +570,7 @@ frase-menu {
   }
 
   .logo-izquierda {
-    width: 80px;
+    width: 100px;
   }
 
   .logo-derecha {
@@ -578,7 +578,7 @@ frase-menu {
   }
 
   .decor-star {
-    width: 50px;
+    width: 60px;
   }
 
   .title-section h2 {
