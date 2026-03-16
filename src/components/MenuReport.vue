@@ -345,7 +345,7 @@ const getIconByDay = (day) => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 6px solid #f63737;
+  border-bottom: 6px solid #f50505;
   padding-bottom: 10px;
   margin-bottom: 20px;
   gap: 10px;
@@ -368,17 +368,6 @@ const getIconByDay = (day) => {
   flex: 1;
 }
 
-.title-section h2 {
-  margin: 0;
-  font-size: 20px;
-  color: #4caf50;
-}
-
-.title-section h3 {
-  margin: 5px 0;
-  color: #6a1b9a;
-}
-
 .title-section p {
   margin: 0;
   font-weight: sans-serif;
@@ -391,13 +380,13 @@ const getIconByDay = (day) => {
 .title-section h2 {
   margin: 0;
   font-size: 20px;
-  color: #ff6f00;
+  color: #f26c05;
   text-shadow: 2px 2px 0px #fff;
 }
 
 .title-section h3 {
   margin: 5px 0;
-  color: #8e24aa;
+  color: #a90fd3;
   font-size: 20px;
 }
 /* ========================================= */
@@ -436,8 +425,8 @@ const getIconByDay = (day) => {
 .menu-table th {
   background: linear-gradient(
     90deg,
-    #67cff5,
-    #0ebcfb
+    #9addf5,
+    #02b8fa
   );
   color: rgb(249, 249, 249);
   padding: 8px;
@@ -525,7 +514,7 @@ frase-menu {
   position: absolute;
   width: 100px;
   height: 50px;
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 50px;
   box-shadow:
     30px 0 white,
