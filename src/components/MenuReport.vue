@@ -395,7 +395,7 @@ const getIconByDay = (day) => {
 .menu-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 17px;
+  font-size: 22px;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -414,7 +414,7 @@ const getIconByDay = (day) => {
 
 .menu-list li::before {
   content: "🍎 ";
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 .menu-table td {
