@@ -395,7 +395,7 @@ const getIconByDay = (day) => {
 .menu-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 17px;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -469,7 +469,7 @@ const getIconByDay = (day) => {
   font-size: 18px;
 }
 frase-menu {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: bold;
   color: #19981f;
   text-align: center;
