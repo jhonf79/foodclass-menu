@@ -580,7 +580,7 @@ frase-menu {
 
   .menu-table {
     width: 100%;
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .menu-table th,
